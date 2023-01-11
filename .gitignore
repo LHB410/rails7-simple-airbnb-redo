@@ -29,3 +29,5 @@
 /config/master.key
 
 /config/initializers/unsplash.rb
+
+/node_modules
