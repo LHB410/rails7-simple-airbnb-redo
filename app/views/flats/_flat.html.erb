@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;">
+  <%= image_tag (flat.picture_url), class: "card-img-top" %>
+  <div class="card-body">
+    <h5 class="card-title"><%= flat.name %></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= flat.address %></h6>
+    <p class="card-text"><%= flat.description %></p>
+    <a href="#" class="card-link"><%= link_to "Show this flat", flat_path(flat) %></a>
+    <a href="#" class="card-link"><%= link_to "Edit", edit_flat_path(flat)  %></a>
+    <a href="#" class="card-link"><%= link_to "Delete", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%></a>
+  </div>
+</div>
