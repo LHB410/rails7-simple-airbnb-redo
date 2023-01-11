@@ -1,0 +1,46 @@
+.image{
+  max-height: 14rem;
+}
+
+.card{
+  width: 24rem;
+}
+
+
+.my-container{
+  max-width: 100vw;
+  margin: 0rem 5rem 0rem 5rem;
+  display: grid;
+  grid-template-areas: "cards cards map" "cards cards map";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.map{
+  background-size: cover;
+  background-position: center;
+  max-height: 100%;
+  max-width: 100%;
+  grid-area: map;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  grid-area: cards;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+

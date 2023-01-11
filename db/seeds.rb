@@ -8,7 +8,7 @@
 puts "cleaning db"
 Flat.destroy_all
 
-flat_images = ['https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200', "https://images.unsplash.com/photo-1588091945254-e2191fefe7b7", "https://images.unsplash.com/photo-1564137799581-baca1aa17f5d", "https://images.unsplash.com/photo-1533779283484-8ad4940aa3a8", "https://images.unsplash.com/photo-1505873242700-f289a29e1e0f", "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2", "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267", "https://images.unsplash.com/photo-1545158535-c3f7168c28b6", "https://images.unsplash.com/photo-1545158535-c3f7168c28b6", "https://images.unsplash.com/photo-1551927411-95e412943b58" ]
+flat_images = ['https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200', "https://images.unsplash.com/photo-1588091945254-e2191fefe7b7?format=webp", "https://images.unsplash.com/photo-1564137799581-baca1aa17f5d?format=webp", "https://images.unsplash.com/photo-1533779283484-8ad4940aa3a8?format=webp", "https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?format=webp", "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?format=webp", "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?format=webp", "https://images.unsplash.com/photo-1545158535-c3f7168c28b6?format=webp", "https://images.unsplash.com/photo-1545158535-c3f7168c28b6?format=webp", "https://images.unsplash.com/photo-1551927411-95e412943b58?format=webp" ]
 
 10.times do
   flat = Flat.create(

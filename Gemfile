@@ -17,7 +17,11 @@ gem "puma", "~> 5.0"
 
 gem "faker"
 
-gem 'unsplash'
+gem "unsplash"
+
+gem 'autoprefixer-rails'
+
+gem 'font-awesome-sass', '~> 5.6.1'
 
 gem "simple_form", github: "heartcombo/simple_form"
 

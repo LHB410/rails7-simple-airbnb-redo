@@ -1,12 +1,14 @@
-<div class="container">
-  <div class="row">
-
+<div class="my-container" id="index-page">
+  <%# cards class is grid system %>
+  <div class="cards">
+  <%# iterating over flats %>
     <% @flats.each do |flat| %>
       <div class="col">
-
         <%= render flat %>
-
       </div>
     <% end %>
   </div>
+
+  <img src="https://images.unsplash.com/photo-1586448911122-f74aa8e3e4b6?format=webp" alt="map" class="map">
+
 </div>
